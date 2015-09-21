@@ -3,7 +3,9 @@ require 'rubygems'
 require 'parse_gemspec_cli/version'
 
 module ParseGemspecCli
-  ISSUE_URL = "#{Gem::Specification.load('parse_gemspec_cli.gemspec').homepage}/issues/new"
+  ISSUE_URL =
+    Gem::Specification.load('parse_gemspec_cli.gemspec').homepage +
+    '/issues/new'
   def self.default_logger
     logger = Logger.new(STDERR)
     logger.progname = "ParseGemspecCli #{VERSION}"
