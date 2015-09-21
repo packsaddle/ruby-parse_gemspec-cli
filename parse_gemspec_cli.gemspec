@@ -2,6 +2,7 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'parse_gemspec_cli/version'
+require 'parse_gemspec_cli/constants'
 
 Gem::Specification.new do |spec|
   spec.name          = 'parse_gemspec_cli'
@@ -11,7 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'CLI for parsing *.gemspec file'
   spec.description   = 'CLI for parsing *.gemspec file'
-  spec.homepage      = 'https://github.com/packsaddle/ruby-parse_gemspec_cli'
+  spec.homepage      = ParseGemspecCli::HOMEPAGE
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`
