@@ -1,0 +1,3 @@
+module ParseGemspecCli
+  VERSION = "0.1.0"
+end
