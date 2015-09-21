@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['o.gata.ken@gmail.com']
 
   spec.summary       = 'CLI for parsing *.gemspec file'
-  spec.description   = 'TODO: Write a longer description or delete this line.'
+  spec.description   = 'CLI for parsing *.gemspec file'
   spec.homepage      = 'https://github.com/packsaddle/ruby-parse_gemspec_cli'
   spec.license       = 'MIT'
 
