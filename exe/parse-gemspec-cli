@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'parse_gemspec_cli'
+require 'parse_gemspec_cli/cli'
+ParseGemspecCli::CLI.start(ARGV)
