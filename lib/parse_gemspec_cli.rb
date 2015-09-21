@@ -4,8 +4,13 @@ require 'parse_gemspec_cli/version'
 
 module ParseGemspecCli
   ISSUE_URL =
-    Gem::Specification.load('parse_gemspec_cli.gemspec').homepage +
-    '/issues/new'
+    Gem::Specification.load(
+      File.expand_path(
+        File.join('..', '..', 'parse_gemspec_cli.gemspec'),
+        __FILE__
+      )
+    ).homepage + '/issues/new'
+
   def self.default_logger
     logger = Logger.new(STDERR)
     logger.progname = "ParseGemspecCli #{VERSION}"
