@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'CLI for parsing *.gemspec file'
   spec.description   = 'TODO: Write a longer description or delete this line.'
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = 'https://github.com/packsaddle/ruby-parse_gemspec_cli'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`

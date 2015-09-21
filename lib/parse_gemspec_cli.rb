@@ -1,10 +1,12 @@
 require 'logger'
+require 'rubygems'
 require 'parse_gemspec_cli/version'
 
 module ParseGemspecCli
+  ISSUE_URL = "#{Gem::Specification.load('parse_gemspec_cli.gemspec').homepage}/issues/new"
   def self.default_logger
     logger = Logger.new(STDERR)
-    logger.progname = ParseGemspecCli.to_s
+    logger.progname = "ParseGemspecCli #{VERSION}"
     logger.level = Logger::WARN
     logger
   end
