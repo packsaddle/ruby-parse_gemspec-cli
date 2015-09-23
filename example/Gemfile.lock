@@ -1,0 +1,19 @@
+PATH
+  remote: ../
+  specs:
+    parse_gemspec-cli (0.2.0)
+      thor
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    thor (0.19.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  parse_gemspec-cli!
+
+BUNDLED WITH
+   1.10.6

@@ -1,0 +1,5 @@
+# A sample Gemfile
+source 'https://rubygems.org'
+
+gem 'parse_gemspec-cli', path: '../'
+# gem "rails"
