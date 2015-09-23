@@ -9,9 +9,13 @@ module ParseGemspec
 
       desc 'version', 'Show the ParseGemspec::Cli version'
       map %w(-v --version) => :version
-
+      option :digit, type: :boolean, default: false
       def version
-        puts "ParseGemspec::Cli version #{VERSION}"
+        if options[:digit]
+          print VERSION
+        else
+          puts "ParseGemspec::Cli version #{VERSION}"
+        end
       end
 
       desc 'parse', 'Parse *.gemspec'
