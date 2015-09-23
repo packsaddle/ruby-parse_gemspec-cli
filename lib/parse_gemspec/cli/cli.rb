@@ -17,9 +17,14 @@ module ParseGemspec
       desc 'parse', 'Parse *.gemspec'
       option :debug, type: :boolean, default: false
       option :verbose, type: :boolean, default: false
-      option :load, type: :string
+      option :load, type: :string, required: true, aliases: '-l'
       def parse
         setup_logger(options)
+        puts MultiJson.dump(
+          ParseGemspec::Specification.load(
+            options[:load]
+          ).to_hash_object
+        )
       rescue StandardError => e
         suggest_messages(options)
         raise e
