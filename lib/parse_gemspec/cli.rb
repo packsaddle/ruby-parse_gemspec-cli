@@ -1,4 +1,5 @@
 require 'logger'
+require 'parse_gemspec'
 
 require 'parse_gemspec/cli/constants'
 require 'parse_gemspec/cli/version'
