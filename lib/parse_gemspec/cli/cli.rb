@@ -20,7 +20,7 @@ module ParseGemspec
       option :load, type: :string, required: true, aliases: '-l'
       def parse
         setup_logger(options)
-        puts MultiJson.dump(
+        print MultiJson.dump(
           ParseGemspec::Specification.load(
             options[:load]
           ).to_hash_object
