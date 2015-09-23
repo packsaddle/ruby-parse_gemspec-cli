@@ -1,3 +1,4 @@
+require 'parse_gemspec/cli/constants'
 require 'parse_gemspec/cli/version'
 
 module ParseGemspec
