@@ -2,6 +2,7 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'parse_gemspec/cli/version'
+require 'parse_gemspec/cli/constants'
 
 Gem::Specification.new do |spec|
   spec.name          = 'parse_gemspec-cli'
@@ -13,8 +14,7 @@ Gem::Specification.new do |spec|
     'TODO: Write a short summary, because Rubygems requires one.'
   spec.description   =
     'TODO: Write a longer description or delete this line.'
-  spec.homepage      =
-    "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = ParseGemspec::Cli::HOMEPAGE
   spec.license       = 'MIT'
 
   spec.files         =
