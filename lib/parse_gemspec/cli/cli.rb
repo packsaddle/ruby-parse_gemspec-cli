@@ -32,6 +32,7 @@ module ParseGemspec
         suggest_messages(options)
         raise e
       end
+      default_command :parse
 
       no_commands do
         def logger
