@@ -1,0 +1,9 @@
+AllCops:
+  Exclude:
+    - vendor/bundle/**/*
+Style/Documentation:
+  Enabled: false
+Style/FileName:
+  Exclude:
+    - bin/*
+    - exe/*
