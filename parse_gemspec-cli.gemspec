@@ -11,9 +11,9 @@ Gem::Specification.new do |spec|
   spec.email         = ['o.gata.ken@gmail.com']
 
   spec.summary       =
-    'TODO: Write a short summary, because Rubygems requires one.'
+    'CLI for parsing *.gemspec file'
   spec.description   =
-    'TODO: Write a longer description or delete this line.'
+    'CLI for parsing *.gemspec file'
   spec.homepage      = ParseGemspec::Cli::HOMEPAGE
   spec.license       = 'MIT'
 
