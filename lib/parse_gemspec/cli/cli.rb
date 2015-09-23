@@ -18,21 +18,21 @@ module ParseGemspec
         end
       end
 
-      desc 'parse', 'Parse *.gemspec'
+      desc 'parse GEMSPEC_PATH', 'Parse *.gemspec'
       option :debug, type: :boolean, default: false
       option :verbose, type: :boolean, default: false
-      option :load, type: :string, required: true, aliases: '-l'
-      def parse
+      def parse(gemspec_path)
         setup_logger(options)
         print MultiJson.dump(
           ParseGemspec::Specification.load(
-            options[:load]
+            gemspec_path
           ).to_hash_object
         )
       rescue StandardError => e
         suggest_messages(options)
         raise e
       end
+      default_command :parse
 
       no_commands do
         def logger
@@ -53,6 +53,11 @@ module ParseGemspec
           logger.error ISSUE_URL
           logger.error 'options:'
           logger.error options
+        end
+
+        # http://stackoverflow.com/a/23955971/104080
+        def method_missing(method, *args)
+          self.class.start([self.class.default_command, method.to_s] + args)
         end
       end
     end
