@@ -21,10 +21,10 @@ module ParseGemspec
       def parse
         setup_logger(options)
         puts MultiJson.dump(
-               ParseGemspec::Specification.load(
-                 options[:load]
-               ).to_hash_object
-             )
+          ParseGemspec::Specification.load(
+            options[:load]
+          ).to_hash_object
+        )
       rescue StandardError => e
         suggest_messages(options)
         raise e
