@@ -5,15 +5,22 @@ var execSync = require('child_process').execSync;
 var conventionalChangelog = require('conventional-changelog');
 var tempfile = require('tempfile');
 var addStream = require('add-stream');
+var URI = require('urijs');
 
 var gemspec = JSON.parse(execSync('bundle exec exe/parse-gemspec-cli parse_gemspec-cli.gemspec'));
 
 var options = { preset: 'angular' };
+var homepageUrl = gemspec.homepage;
+var url = new URI(homepageUrl);
+var host = url.protocol() + '://' + url.authority();
+var owner = url.pathname().split('/')[1];
+var repository = url.pathname().split('/')[2];
+
 var templateContext = {
   version: gemspec.version,
-  host: 'https://github.com',
-  owner: 'packsaddle',
-  repository: 'ruby-parse_gemspec-cli'
+  host: host,
+  owner: owner,
+  repository: repository
 };
 var infile = 'changelog.md';
 var outfile = 'changelog.md';
