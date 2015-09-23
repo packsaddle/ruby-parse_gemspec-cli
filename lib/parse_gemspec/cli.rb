@@ -1,4 +1,4 @@
-require "parse_gemspec/cli/version"
+require 'parse_gemspec/cli/version'
 
 module ParseGemspec
   module Cli
