@@ -11,9 +11,9 @@ Gem::Specification.new do |spec|
   spec.email         = ['o.gata.ken@gmail.com']
 
   spec.summary       =
-    'CLI for parsing *.gemspec file'
+    'CLI for parsing *.gemspec file. Convert to JSON format.'
   spec.description   =
-    'CLI for parsing *.gemspec file'
+    'CLI for parsing *.gemspec file. Convert to JSON format.'
   spec.homepage      = ParseGemspec::Cli::HOMEPAGE
   spec.license       = 'MIT'
 
