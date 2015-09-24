@@ -1,5 +1,7 @@
 # ParseGemspec::Cli
 
+See [parse_gemspec](https://rubygems.org/gems/parse_gemspec) ([repo](https://github.com/packsaddle/ruby-parse_gemspec)) for the programmatic API and issue tracker.
+
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/parse_gemspec/cli`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
