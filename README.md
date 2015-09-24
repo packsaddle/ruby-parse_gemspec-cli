@@ -12,6 +12,11 @@ See [parse_gemspec](https://rubygems.org/gems/parse_gemspec) ([repo](https://git
 TODO: Write usage instructions here
 
 
+## Changelog
+
+[changelog.md](./changelog.md).
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
