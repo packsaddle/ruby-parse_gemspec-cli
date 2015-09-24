@@ -4,7 +4,7 @@
 
 > CLI for parsing *.gemspec file. Convert to JSON format.
 
-See [parse_gemspec](https://rubygems.org/gems/parse_gemspec) ([repo](https://github.com/packsaddle/ruby-parse_gemspec)) for the programmatic API and issue tracker.
+See [parse_gemspec](https://rubygems.org/gems/parse_gemspec) ([repo](https://github.com/packsaddle/ruby-parse_gemspec)) for the programmatic API.
 
 
 ## Usage
