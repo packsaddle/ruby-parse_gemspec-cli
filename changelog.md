@@ -1,3 +1,10 @@
+<a name="0.4.1"></a>
+## [0.4.1](https://github.com/packsaddle/ruby-parse_gemspec-cli/compare/v0.4.0...v0.4.1) (2015-09-24)
+
+* CLI improvement
+* Update documents
+
+
 <a name="0.4.0"></a>
 # [0.4.0](https://github.com/packsaddle/ruby-parse_gemspec-cli/compare/v0.3.0...v0.4.0) (2015-09-23)
 
