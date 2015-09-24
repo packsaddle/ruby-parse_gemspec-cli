@@ -1,12 +1,16 @@
 PATH
   remote: ../
   specs:
-    parse_gemspec-cli (0.2.0)
+    parse_gemspec-cli (0.4.0)
+      multi_json
+      parse_gemspec
       thor
 
 GEM
   remote: https://rubygems.org/
   specs:
+    multi_json (1.11.2)
+    parse_gemspec (0.4.0)
     thor (0.19.1)
 
 PLATFORMS
