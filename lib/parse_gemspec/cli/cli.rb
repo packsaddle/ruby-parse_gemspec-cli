@@ -32,7 +32,6 @@ module ParseGemspec
         suggest_messages(options)
         raise e
       end
-      default_command :parse
 
       no_commands do
         def logger
@@ -57,7 +56,7 @@ module ParseGemspec
 
         # http://stackoverflow.com/a/23955971/104080
         def method_missing(method, *args)
-          self.class.start([self.class.default_command, method.to_s] + args)
+          self.class.start([:parse, method.to_s] + args)
         end
       end
     end
