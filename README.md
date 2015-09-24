@@ -9,8 +9,43 @@ See [parse_gemspec](https://rubygems.org/gems/parse_gemspec) ([repo](https://git
 
 ## Usage
 
-TODO: Write usage instructions here
+```bash
+$ parse-gemspec-cli
+Commands:
+  parse-gemspec-cli help [COMMAND]      # Describe available commands or one specific command
+  parse-gemspec-cli [parse] GEMSPEC_PATH  # Parse *.gemspec
+  parse-gemspec-cli version             # Show the ParseGemspec::Cli version
+```
 
+
+## Example
+
+### Pretty print
+
+```bash
+$ parse-gemspec-cli checkstyle_filter-git.gemspec | jq .
+{
+  "name": "checkstyle_filter-git",
+  "version": "1.0.3.pre.beta",
+  "homepage": "https://github.com/packsaddle/ruby-checkstyle_filter-git"
+}
+```
+
+
+### Use from another language
+
+```js
+// javascript
+'use strict';
+var execSync = require('child_process').execSync;
+var gemspec = JSON.parse(execSync('bundle exec parse-gemspec-cli parse_gemspec-cli.gemspec'));
+
+module.exports = {
+  version: gemspec.version
+};
+```
+
+Actual example [.conventional-changelog.context.js](./.conventional-changelog.context.js).
 
 ## Changelog
 
