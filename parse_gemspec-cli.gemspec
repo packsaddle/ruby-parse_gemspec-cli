@@ -16,6 +16,7 @@ Gem::Specification.new do |spec|
     'CLI for parsing *.gemspec file. Convert to JSON format.'
   spec.homepage      = ParseGemspec::Cli::HOMEPAGE
   spec.license       = 'MIT'
+  spec.required_ruby_version = '>= 2.0'
 
   spec.files         =
     `git ls-files -z`
